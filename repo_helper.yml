@@ -11,7 +11,6 @@ short_desc: 'Search the Python documentation from your terminal.'
 
 enable_conda: false
 enable_tests: false
-enable_docs: false
 
 python_versions:
  - 3.6
@@ -19,3 +18,21 @@ python_versions:
  - 3.8
  - 3.9
  - 3.10-dev
+
+sphinx_html_theme: furo
+standalone_contrib_guide: true
+
+classifiers:
+ - 'Development Status :: 4 - Beta'
+ - 'Environment :: Console'
+ - 'Topic :: Documentation'
+
+keywords:
+ - documentation
+ - terminal
+
+extra_sphinx_extensions:
+ - sphinx_click
+
+sphinx_conf_epilogue:
+ - manpages_url = "https://manpages.debian.org/{path}"

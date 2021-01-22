@@ -1,0 +1,5 @@
+===========
+Public API
+===========
+
+.. automodule:: searchdocs

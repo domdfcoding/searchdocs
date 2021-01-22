@@ -43,10 +43,14 @@ __all__ = ["main"]
 DOCS_PYTHON_ORG = RequestsURL("https://docs.python.org/3/")
 
 
-@flag_option("--browser", default=False)
+@flag_option("--browser", default=False, help="Open the documentation in the default web browser.")
 @click.argument("search_term", type=click.STRING)
 @click_command()
-def main(search_term: str, browser):  # noqa: D103
+def main(search_term: str, browser):
+	"""
+	Search for ``SEARCH_TERM`` in the Python documentation, and print the URL of the best match.
+	"""
+
 	url = find_url(DOCS_PYTHON_ORG, search_term)
 
 	if browser:
