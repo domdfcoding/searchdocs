@@ -8,6 +8,9 @@ searchdocs
 
 .. end short_desc
 
+Built on top of `sphobjinv <https://sphobjinv.readthedocs.io/en/stable/>`_,
+which can be used for more advanced manipulation and searching of Sphinx ``objects.inv`` files.
+
 .. start shields
 
 .. list-table::
