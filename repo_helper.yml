@@ -36,3 +36,6 @@ extra_sphinx_extensions:
 
 sphinx_conf_epilogue:
  - manpages_url = "https://manpages.debian.org/{path}"
+
+console_scripts:
+ - "searchdocs = searchdocs.__main__:main"
