@@ -17,4 +17,3 @@ searchdocs
 	.. prompt:: bash
 
 		searchdocs rmtree | lynx -
-
