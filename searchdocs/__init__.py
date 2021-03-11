@@ -35,7 +35,7 @@ from base64 import urlsafe_b64encode
 from typing import List, Tuple, Union, overload
 
 # 3rd party
-import appdirs  # type: ignore
+import appdirs
 import diskcache  # type: ignore
 import sphobjinv  # type: ignore
 from apeye import URL, RequestsURL

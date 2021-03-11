@@ -18,7 +18,7 @@ def param(term: str, url: str):
 
 
 def test_download_objects_inv():
-	shutil.rmtree(cache_dir_for_url(DOCS_PYTHON_ORG))
+	shutil.rmtree(cache_dir_for_url(DOCS_PYTHON_ORG), ignore_errors=True)
 	download_objects_inv(DOCS_PYTHON_ORG)
 	download_objects_inv(DOCS_PYTHON_ORG)
 
