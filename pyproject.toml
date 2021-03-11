@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "searchdocs"
-version = "0.1.1"
+version = "0.2.0"
 description = "Search the Python documentation from your terminal."
 readme = "README.rst"
 keywords = [ "documentation", "terminal",]
