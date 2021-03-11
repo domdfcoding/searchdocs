@@ -35,9 +35,6 @@ from apeye import RequestsURL
 from consolekit import click_command
 from consolekit.options import flag_option
 
-# this package
-from searchdocs import find_url
-
 __all__ = ["main"]
 
 DOCS_PYTHON_ORG = RequestsURL("https://docs.python.org/3/")
@@ -51,9 +48,12 @@ def main(search_term: str, browser):
 	Search for ``SEARCH_TERM`` in the Python documentation, and print the URL of the best match.
 	"""
 
+	# this package
+	from searchdocs import find_url
+
 	url = find_url(DOCS_PYTHON_ORG, search_term)
 
-	if browser:
+	if browser:  # pragma: no cover
 		# stdlib
 		import webbrowser
 

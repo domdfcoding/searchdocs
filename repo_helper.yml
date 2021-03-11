@@ -10,7 +10,6 @@ license: 'MIT'
 short_desc: 'Search the Python documentation from your terminal.'
 
 enable_conda: false
-enable_tests: false
 
 python_versions:
  - 3.6
