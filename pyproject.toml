@@ -1,3 +1,26 @@
 [build-system]
 requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "searchdocs"
+version = "0.1.1"
+description = "Search the Python documentation from your terminal."
+readme = "README.rst"
+keywords = [ "documentation", "terminal",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+[[project.authors]]
+email = "dominic@davis-foster.co.uk"
+name = "Dominic Davis-Foster"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/domdfcoding/searchdocs"
+"Issue Tracker" = "https://github.com/domdfcoding/searchdocs/issues"
+"Source Code" = "https://github.com/domdfcoding/searchdocs"
+Documentation = "https://searchdocs.readthedocs.io/en/latest"
+
+[project.scripts]
+searchdocs = "searchdocs.__main__:main"

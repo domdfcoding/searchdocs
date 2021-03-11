@@ -23,7 +23,7 @@ rst_prolog = f""".. |pkgname| replace:: searchdocs
 """
 
 author = "Dominic Davis-Foster"
-project = "searchdocs"
+project = "searchdocs".replace('_', '-')
 slug = re.sub(r'\W+', '-', project.lower())
 release = version = __version__
 copyright = "2021 Dominic Davis-Foster"  # pylint: disable=redefined-builtin
@@ -45,6 +45,7 @@ extensions = [
 		"sphinx_copybutton",
 		"sphinxcontrib.default_values",
 		"sphinxcontrib.toctree_plus",
+		"sphinx_debuginfo",
 		"seed_intersphinx_mapping",
 		"sphinx_click",
 		]
