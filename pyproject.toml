@@ -1,13 +1,13 @@
 [build-system]
-requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
-build-backend = "setuptools.build_meta"
+requires = [ "whey",]
+build-backend = "whey"
 
 [project]
 name = "searchdocs"
 version = "0.2.0"
 description = "Search the Python documentation from your terminal."
 readme = "README.rst"
-keywords = [ "documentation", "terminal",]
+keywords = [ "documentation", "terminal", "search",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
 
 [[project.authors]]
@@ -26,3 +26,15 @@ Documentation = "https://searchdocs.readthedocs.io/en/latest"
 
 [project.scripts]
 searchdocs = "searchdocs.__main__:main"
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Topic :: Documentation",
+    "Typing :: Typed",
+]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython", "PyPy",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"

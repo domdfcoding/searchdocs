@@ -9,6 +9,7 @@ version: '0.2.0'
 license: 'MIT'
 short_desc: 'Search the Python documentation from your terminal.'
 
+use_whey: true
 enable_conda: false
 
 python_versions:
@@ -28,6 +29,7 @@ classifiers:
 keywords:
  - documentation
  - terminal
+ - search
 
 extra_sphinx_extensions:
  - sphinx_click
