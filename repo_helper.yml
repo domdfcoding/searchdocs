@@ -11,6 +11,8 @@ short_desc: 'Search the Python documentation from your terminal.'
 
 use_whey: true
 enable_conda: false
+sphinx_html_theme: furo
+standalone_contrib_guide: true
 
 python_versions:
  - 3.6
