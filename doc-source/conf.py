@@ -34,7 +34,9 @@ extensions = [
 		"sphinx_toolbox",
 		"sphinx_toolbox.more_autodoc",
 		"sphinx_toolbox.more_autosummary",
+		"sphinx_toolbox.documentation_summary",
 		"sphinx_toolbox.tweaks.param_dash",
+		"sphinx_toolbox.tweaks.latex_toc",
 		"sphinx.ext.intersphinx",
 		"sphinx.ext.mathjax",
 		"sphinxcontrib.httpdomain",
@@ -66,23 +68,18 @@ intersphinx_mapping = {
 		"sphinx": ("https://www.sphinx-doc.org/en/stable/", None),
 		}
 
-html_theme = "furo"
-html_theme_options = {
-		"light_css_variables": {
-				"toc-title-font-size": "12pt",
-				"toc-font-size": "12pt",
-				"admonition-font-size": "12pt",
-				},
-		"dark_css_variables": {
-				"toc-title-font-size": "12pt",
-				"toc-font-size": "12pt",
-				"admonition-font-size": "12pt",
-				},
-		}
+html_theme = "domdf_sphinx_theme"
+html_theme_options = {"logo_only": False}
 html_theme_path = ["../.."]
 html_show_sourcelink = True  # True will show link to source
 
-html_context = {}
+html_context = {
+		"display_github": True,
+		"github_user": "domdfcoding",
+		"github_repo": "searchdocs",
+		"github_version": "master",
+		"conf_py_path": "/doc-source/",
+		}
 htmlhelp_basename = slug
 
 latex_documents = [("index", f'{slug}.tex', project, author, "manual")]
@@ -110,7 +107,7 @@ add_module_names = False
 hide_none_rtype = True
 all_typevars = True
 overloads_location = "bottom"
-
+documentation_summary = "Search the Python documentation from your terminal."
 
 autodoc_exclude_members = [   # Exclude "standard" methods.
 		"__dict__",
