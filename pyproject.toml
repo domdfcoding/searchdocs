@@ -9,9 +9,11 @@ description = "Search the Python documentation from your terminal."
 readme = "README.rst"
 keywords = [ "documentation", "terminal",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
+
 [[project.authors]]
 email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
+
 
 [project.license]
 file = "LICENSE"
