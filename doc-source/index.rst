@@ -5,6 +5,7 @@ searchdocs
 .. start short_desc
 
 .. documentation-summary::
+	:meta:
 
 .. end short_desc
 
@@ -28,7 +29,7 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 		* - Activity
 		  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 		* - QA
-		  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+		  - |codefactor| |actions_flake8| |actions_mypy|
 		* - Other
 		  - |license| |language| |requires|
 
@@ -113,9 +114,6 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 		:downloads: month
 		:alt: PyPI - Downloads
 
-	.. |pre_commit_ci| pre-commit-ci-shield::
-		:alt: pre-commit.ci status
-
 .. end shields
 
 Installation
@@ -129,6 +127,11 @@ Installation
 
 .. end installation
 
+Contents
+----------
+
+.. html-section::
+
 .. toctree::
 	:hidden:
 
@@ -136,7 +139,6 @@ Installation
 
 .. toctree::
 	:maxdepth: 3
-	:caption: Documentation
 	:glob:
 
 	usage
@@ -144,12 +146,18 @@ Installation
 	contributing
 	Source
 
+.. sidebar-links::
+	:caption: Links
+	:github:
+	:pypi: searchdocs
+
+
 .. start links
 
 .. only:: html
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	`Browse the GitHub Repository <https://github.com/domdfcoding/searchdocs>`__
+	:github:repo:`Browse the GitHub Repository <domdfcoding/searchdocs>`
 
 .. end links

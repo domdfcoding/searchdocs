@@ -33,6 +33,7 @@ import sys
 import click
 from apeye import RequestsURL
 from consolekit import click_command
+from consolekit.commands import MarkdownHelpCommand
 from consolekit.options import flag_option
 
 __all__ = ["main"]
@@ -40,10 +41,10 @@ __all__ = ["main"]
 DOCS_PYTHON_ORG = RequestsURL("https://docs.python.org/3/")
 
 
-@flag_option("--browser", default=False, help="Open the documentation in the default web browser.")
+@flag_option("--browser", help="Open the documentation in the default web browser.")
 @click.argument("search_term", type=click.STRING)
-@click_command()
-def main(search_term: str, browser):
+@click_command(cls=MarkdownHelpCommand)
+def main(search_term: str, browser: bool = False):
 	"""
 	Search for ``SEARCH_TERM`` in the Python documentation, and print the URL of the best match.
 	"""

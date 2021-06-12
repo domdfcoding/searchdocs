@@ -12,7 +12,7 @@ searchdocs
 .. tip::
 
 	The output from the ``searchdocs`` command can be piped into the :manpage:`lynx(1)` command
-	to open a webbrowser in the terminal:
+	to open a web browser in the terminal:
 
 	.. prompt:: bash
 
