@@ -38,7 +38,8 @@ from typing import List, Tuple, Union, overload
 import appdirs
 import diskcache  # type: ignore
 import sphobjinv  # type: ignore
-from apeye import URL, RequestsURL
+from apeye import URL
+from apeye.requests_url import RequestsURL
 from domdf_python_tools.paths import PathPlus
 from fuzzywuzzy.fuzz import ratio  # type: ignore
 from typing_extensions import Literal

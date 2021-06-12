@@ -31,7 +31,7 @@ import sys
 
 # 3rd party
 import click
-from apeye import RequestsURL
+from apeye.requests_url import RequestsURL
 from consolekit import click_command
 from consolekit.commands import MarkdownHelpCommand
 from consolekit.options import flag_option
