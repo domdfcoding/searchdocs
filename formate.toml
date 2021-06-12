@@ -43,6 +43,7 @@ known_third_party = [
     "domdf_python_tools",
     "fuzzywuzzy",
     "github",
+    "importlib_metadata",
     "levenshtein",
     "pytest",
     "pytest_cov",
