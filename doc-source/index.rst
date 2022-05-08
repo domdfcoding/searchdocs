@@ -61,7 +61,8 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| requires-io-shield::
+	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/searchdocs/badge.svg
+		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/searchdocs/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
@@ -106,7 +107,7 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2021
+	.. |maintained| maintained-shield:: 2022
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
