@@ -16,12 +16,10 @@ standalone_contrib_guide: true
 mypy_version: 0.902
 
 python_versions:
- - 3.6
  - 3.7
  - 3.8
  - 3.9
- - 3.10-dev
- - pypy36
+ - '3.10'
  - pypy37
 
 classifiers:
