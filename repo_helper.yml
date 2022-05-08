@@ -13,7 +13,6 @@ use_whey: true
 enable_conda: false
 sphinx_html_theme: furo
 standalone_contrib_guide: true
-mypy_version: 0.902
 
 python_versions:
  - 3.7
