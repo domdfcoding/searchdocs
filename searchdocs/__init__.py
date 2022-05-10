@@ -36,12 +36,12 @@ from typing import List, Tuple, Union, overload
 
 # 3rd party
 import appdirs
-import diskcache  # type: ignore
-import sphobjinv  # type: ignore
-from apeye import URL
+import diskcache  # type: ignore[import]
+import sphobjinv  # type: ignore[import]
 from apeye.requests_url import RequestsURL
+from apeye.url import URL
 from domdf_python_tools.paths import PathPlus
-from fuzzywuzzy.fuzz import ratio  # type: ignore
+from fuzzywuzzy.fuzz import ratio  # type: ignore[import]
 from typing_extensions import Literal
 
 __all__ = [
@@ -91,6 +91,8 @@ def download_objects_inv(docs_url: Union[str, RequestsURL]) -> PathPlus:
 	:param docs_url: The base URL for the documentation, e.g. ``"https://docs.python.org/3/"``.
 
 	:returns: The filename of the cached file.
+
+	.. latex:clearpage::
 	"""
 
 	docs_url = resolve_url(docs_url)
@@ -227,7 +229,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 		with warnings.catch_warnings():
 			warnings.simplefilter("ignore")
 			# 3rd party
-			from fuzzywuzzy import process as fwp  # type: ignore
+			from fuzzywuzzy import process as fwp  # type: ignore[import]
 
 		# Must propagate list index to include in output
 		# Search vals are rst prepended with list index
@@ -257,10 +259,11 @@ class Inventory(sphobjinv.inventory.Inventory):
 		# use it to convert composite result string to tuple:
 		# result --> (rst, score, index)
 		p_idx = re.compile("^(\\d+)\\s+(.+?)\\s+(\\d+)$")
-		results = [
-				(m.group(2), int(m.group(3)), int(m.group(1)))  # type: ignore
-				for m in map(p_idx.match, initial_results)
-				]
+		results = []
+
+		for m in map(p_idx.match, initial_results):
+			assert m is not None
+			results.append((m.group(2), int(m.group(3)), int(m.group(1))))
 
 		# Return based on flags
 		if with_score:

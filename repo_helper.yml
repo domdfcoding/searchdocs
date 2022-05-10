@@ -33,13 +33,12 @@ keywords:
 
 extra_sphinx_extensions:
  - sphinx_click
- - sphinx_toolbox_experimental.html_section
- - sphinx_toolbox_experimental.autosummary_widths
- - sphinx_toolbox_experimental.needspace
- - sphinx_toolbox_experimental.peps
+ - sphinx_toolbox.more_autosummary.column_widths
 
 sphinx_conf_epilogue:
  - manpages_url = "https://manpages.debian.org/{path}"
+ - nitpicky = True
+ - needspace_amount = r"5\baselineskip"
 
 console_scripts:
  - "searchdocs = searchdocs.__main__:main"

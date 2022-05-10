@@ -78,3 +78,5 @@ def setup(app):
 
 
 manpages_url = "https://manpages.debian.org/{path}"
+nitpicky = True
+needspace_amount = r"5\baselineskip"

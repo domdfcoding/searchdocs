@@ -44,7 +44,7 @@ DOCS_PYTHON_ORG = RequestsURL("https://docs.python.org/3/")
 @flag_option("--browser", help="Open the documentation in the default web browser.")
 @click.argument("search_term", type=click.STRING)
 @click_command(cls=MarkdownHelpCommand)
-def main(search_term: str, browser: bool = False):
+def main(search_term: str, browser: bool = False) -> None:
 	"""
 	Search for ``SEARCH_TERM`` in the Python documentation, and print the URL of the best match.
 	"""
