@@ -61,8 +61,8 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/searchdocs/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/searchdocs/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/searchdocs/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/searchdocs/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
