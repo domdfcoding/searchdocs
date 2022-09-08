@@ -21,6 +21,12 @@ python_versions:
  - '3.10'
  - pypy37
 
+github_ci_requirements:
+ Windows:
+  post:
+   # Prefery binary wheels for older versions over sdists for newer ones
+   - pip config set global.prefer-binary true
+
 classifiers:
  - 'Development Status :: 4 - Beta'
  - 'Environment :: Console'
