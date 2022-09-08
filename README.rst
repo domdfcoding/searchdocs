@@ -58,8 +58,8 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 	:target: https://github.com/domdfcoding/searchdocs/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/searchdocs/badge.svg
-	:target: https://dependency-dash.herokuapp.com/github/domdfcoding/searchdocs/
+.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/searchdocs/badge.svg
+	:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/searchdocs/
 	:alt: Requirements Status
 
 .. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/searchdocs/master?logo=coveralls
