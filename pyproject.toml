@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "searchdocs"
-version = "0.2.1"
+version = "0.2.2"
 description = "Search the Python documentation from your terminal."
 readme = "README.rst"
 keywords = [ "documentation", "search", "terminal",]
