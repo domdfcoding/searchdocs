@@ -107,7 +107,7 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2023
+	.. |maintained| maintained-shield:: 2024
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::

@@ -53,5 +53,5 @@ known_third_party = [
     "sphobjinv",
     "typing_extensions",
 ]
-known_first_party = "searchdocs"
+known_first_party = [ "searchdocs",]
 line_length = 115
