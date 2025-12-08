@@ -36,12 +36,12 @@ from typing import List, Tuple, Union, overload
 
 # 3rd party
 import appdirs
-import diskcache  # type: ignore[import]
-import sphobjinv  # type: ignore[import]
+import diskcache  # type: ignore[import-untyped]
+import sphobjinv  # type: ignore[import-untyped]
 from apeye.requests_url import RequestsURL
 from apeye.url import URL
 from domdf_python_tools.paths import PathPlus
-from fuzzywuzzy.fuzz import ratio  # type: ignore[import]
+from fuzzywuzzy.fuzz import ratio  # type: ignore[import-untyped]
 from typing_extensions import Literal
 
 __all__ = [
@@ -229,7 +229,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 		with warnings.catch_warnings():
 			warnings.simplefilter("ignore")
 			# 3rd party
-			from fuzzywuzzy import process as fwp  # type: ignore[import]
+			from fuzzywuzzy import process as fwp  # type: ignore[import-untyped]
 
 		# Must propagate list index to include in output
 		# Search vals are rst prepended with list index
