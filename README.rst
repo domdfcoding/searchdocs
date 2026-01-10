@@ -101,11 +101,11 @@ which can be used for more advanced manipulation and searching of Sphinx ``objec
 	:target: https://github.com/domdfcoding/searchdocs/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2025
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/searchdocs
-	:target: https://pypi.org/project/searchdocs/
+	:target: https://pypistats.org/packages/searchdocs
 	:alt: PyPI - Downloads
 
 .. end shields
