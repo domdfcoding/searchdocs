@@ -170,7 +170,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 			*,
 			with_index: Literal[True],
 			thresh: int = ...,
-			with_score: Literal[False] = ...
+			with_score: Literal[False] = ...,
 			) -> List[Tuple[str, int]]: ...
 
 	@overload
@@ -180,7 +180,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 			*,
 			with_score: Literal[True],
 			thresh: int = ...,
-			with_index: Literal[False] = ...
+			with_index: Literal[False] = ...,
 			) -> List[Tuple[str, int]]: ...
 
 	@overload
@@ -190,7 +190,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 			*,
 			with_index: Literal[True],
 			with_score: Literal[True],
-			thresh: int = ...
+			thresh: int = ...,
 			) -> List[Tuple[str, int, int]]: ...
 
 	@overload
@@ -200,7 +200,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 			*,
 			thresh: int = ...,
 			with_index: Literal[False] = ...,
-			with_score: Literal[False] = ...
+			with_score: Literal[False] = ...,
 			) -> List[str]: ...
 
 	def suggest_from_name(
@@ -209,7 +209,7 @@ class Inventory(sphobjinv.inventory.Inventory):
 			*,
 			thresh: int = 50,
 			with_index: bool = False,
-			with_score: bool = False
+			with_score: bool = False,
 			) -> Union[List[str], List[Tuple[str, int]], List[Tuple[str, int, int]]]:
 		"""
 		Similar to :meth:`sphobjinv.inventory.Inventory.suggest`, but only searches the names of objects and not their types.
