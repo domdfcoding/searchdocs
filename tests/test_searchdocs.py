@@ -29,9 +29,9 @@ def test_download_objects_inv():
 				param("https://docs.python.org/", "https://docs.python.org/3/"),
 				param(
 						"https://domdf-python-tools.readthedocs.io/",
-						"https://domdf-python-tools.readthedocs.io/en/latest/"
+						"https://domdf-python-tools.readthedocs.io/en/latest/",
 						),
-				]
+				],
 		)
 def test_resolve_url(url: str, expected: URL):
 	assert str(resolve_url(url)) == str(expected)
@@ -44,9 +44,9 @@ def test_resolve_url(url: str, expected: URL):
 				("https://docs.python.org/", "aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcv"),
 				(
 						"https://domdf-python-tools.readthedocs.io/",
-						"aHR0cHM6Ly9kb21kZi1weXRob24tdG9vbHMucmVhZHRoZWRvY3MuaW8v"
+						"aHR0cHM6Ly9kb21kZi1weXRob24tdG9vbHMucmVhZHRoZWRvY3MuaW8v",
 						),
-				]
+				],
 		)
 def test_cache_dir_for_url(url: str, expected: PathLike):
 	expected = PathPlus(appdirs.user_cache_dir("searchdocs")) / expected

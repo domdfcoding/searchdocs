@@ -25,15 +25,15 @@ def param(term: str, url: str):
 				param("Set", "https://docs.python.org/3/library/stdtypes.html#set"),
 				param(
 						"difflib.get_clos_matches",
-						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches"
+						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches",
 						),
 				param(
 						"difflib.get_close_matches",
-						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches"
+						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches",
 						),
 				param(
 						"difflib.get_closest_matches",
-						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches"
+						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches",
 						),
 				param("typing.Dict", "https://docs.python.org/3/library/typing.html#typing.Dict"),
 				param("Dict ", "https://docs.python.org/3/library/stdtypes.html#dict"),
@@ -46,7 +46,7 @@ def param(term: str, url: str):
 				param("license", "https://docs.python.org/3/library/constants.html#license"),
 				param("Decimal", "https://docs.python.org/3/library/decimal.html#module-decimal"),
 				param("decimal.Decimal", "https://docs.python.org/3/library/decimal.html#decimal.Decimal"),
-				]
+				],
 		)
 def test_find_url(term: str, url: URL):
 	assert str(find_url(DOCS_PYTHON_ORG, term)) == str(url)
@@ -86,7 +86,7 @@ def test_find_url(term: str, url: URL):
 				"UserWarning",
 				"ValueError",
 				"Warning",
-				]
+				],
 		)
 def test_find_url_exceptions(term: str):
 	url = URL(f"https://docs.python.org/3/library/exceptions.html#{term}")
