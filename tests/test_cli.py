@@ -15,14 +15,14 @@ def param(term: str, url: str):
 		"term, url",
 		[
 				param("pathlib.Path", "https://docs.python.org/3/library/pathlib.html#pathlib.Path"),
-				param("dict", "https://docs.python.org/3/library/stdtypes.html#dict"),
-				param("dict ", "https://docs.python.org/3/library/stdtypes.html#dict"),
-				param("dic", "https://docs.python.org/3/library/stdtypes.html#dict"),
-				param("list", "https://docs.python.org/3/library/stdtypes.html#list"),
-				param("list ", "https://docs.python.org/3/library/stdtypes.html#list"),
-				param("Dict", "https://docs.python.org/3/library/stdtypes.html#dict"),
-				param("set", "https://docs.python.org/3/library/stdtypes.html#set"),
-				param("Set", "https://docs.python.org/3/library/stdtypes.html#set"),
+				param("dict", "https://docs.python.org/3/builtins/stdtypes.html#dict"),
+				param("dict ", "https://docs.python.org/3/builtins/stdtypes.html#dict"),
+				param("dic", "https://docs.python.org/3/builtins/stdtypes.html#dict"),
+				param("list", "https://docs.python.org/3/builtins/stdtypes.html#list"),
+				param("list ", "https://docs.python.org/3/builtins/stdtypes.html#list"),
+				param("Dict", "https://docs.python.org/3/builtins/stdtypes.html#dict"),
+				param("set", "https://docs.python.org/3/builtins/stdtypes.html#set"),
+				param("Set", "https://docs.python.org/3/builtins/stdtypes.html#set"),
 				param(
 						"difflib.get_clos_matches",
 						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches",
@@ -36,14 +36,14 @@ def param(term: str, url: str):
 						"https://docs.python.org/3/library/difflib.html#difflib.get_close_matches",
 						),
 				param("typing.Dict", "https://docs.python.org/3/library/typing.html#typing.Dict"),
-				param("Dict ", "https://docs.python.org/3/library/stdtypes.html#dict"),
-				param("NotImplemented", "https://docs.python.org/3/library/constants.html#NotImplemented"),
-				param("False", "https://docs.python.org/3/library/constants.html#False"),
-				param("True", "https://docs.python.org/3/library/constants.html#True"),
-				param("None", "https://docs.python.org/3/library/constants.html#None"),
-				param("sum", "https://docs.python.org/3/library/functions.html#sum"),
-				param("staticmethod", "https://docs.python.org/3/library/functions.html#staticmethod"),
-				param("license", "https://docs.python.org/3/library/constants.html#license"),
+				param("Dict ", "https://docs.python.org/3/builtins/stdtypes.html#dict"),
+				param("NotImplemented", "https://docs.python.org/3/builtins/constants.html#NotImplemented"),
+				param("False", "https://docs.python.org/3/builtins/constants.html#False"),
+				param("True", "https://docs.python.org/3/builtins/constants.html#True"),
+				param("None", "https://docs.python.org/3/builtins/constants.html#None"),
+				param("sum", "https://docs.python.org/3/builtins/functions.html#sum"),
+				param("staticmethod", "https://docs.python.org/3/builtins/functions.html#staticmethod"),
+				param("license", "https://docs.python.org/3/builtins/constants.html#license"),
 				param("Decimal", "https://docs.python.org/3/library/decimal.html#module-decimal"),
 				param("decimal.Decimal", "https://docs.python.org/3/library/decimal.html#decimal.Decimal"),
 				],
@@ -106,4 +106,4 @@ def test_find_url_exceptions(term: str):
 			)
 
 	assert result.exit_code == 0
-	assert result.stdout.strip() == f"https://docs.python.org/3/library/exceptions.html#{term}"
+	assert result.stdout.strip() == f"https://docs.python.org/3/builtins/exceptions.html#{term}"
